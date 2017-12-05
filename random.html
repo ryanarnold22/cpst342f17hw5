@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Random words</title>		
+		<link rel="words.js" href="javascript">
+		<link rel="ajax.js" href="javascript">
+	</head>
+	<body>
+		
+		<div id="wrapper">
+			<h1>Random String Generator</h1>
+			<form id="string-generator">
+				<label>How many words in the string? 
+				<input type="number" name="word-count" step="1" min="1" max="20"></label>
+
+				<input type="submit" value="Generate String">
+				<input type="hidden" name="action" value="generate-string">
+				
+				<span id="result" style="display: none;"></span>
+			</form>
+			<p class="credit">WordList courtesy of <a href="http://www-01.sil.org/linguistics/wordlists/english/">SIL</a></p>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="words.js"></script>
+	</body>
+</html>
