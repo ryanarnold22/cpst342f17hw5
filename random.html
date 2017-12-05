@@ -7,7 +7,22 @@
 		<link rel="ajax.js" href="javascript">
 	</head>
 	<body>
-		
+		<script>
+		.ajax({
+   type: "POST",
+   url: http://ellypost.com/courses/453/ajax-lab/actions.php,
+   async: false,
+   data: JSON.stringify($('#form').serializeArray()),
+   success: function(data){
+      console.log(data);
+      return true;
+   },
+   complete: function() {},
+   error: function(xhr, textStatus, errorThrown) {
+     console.log('ajax loading error...');
+     return false;
+     var word-Count = value.trim();
+   }</script>
 		<div id="wrapper">
 			<h1>Random String Generator</h1>
 			<form id="string-generator">
